@@ -30,7 +30,7 @@ const downloadAll = async () => {
         try {
           await downloadImage(
             `${tilesetBaseUrl}${z}_${x}_${y}.png`,
-            `./darkSky/tile_${z}_${x}_${y}.png`
+            `./tiles/tile_${z}_${x}_${y}.png`
           );
         } catch (e) {
           console.log("nope");
