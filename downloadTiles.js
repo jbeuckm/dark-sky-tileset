@@ -25,8 +25,8 @@ function downloadImage(url, filepath) {
 
 const downloadAll = async () => {
   for (let z = 1; z <= 6; z++) {
-    for (let x = 1; x <= Math.pow(2, z); x++) {
-      for (let y = 1; y <= Math.pow(2, z); y++) {
+    for (let x = 0; x <= Math.pow(2, z); x++) {
+      for (let y = 0; y <= Math.pow(2, z); y++) {
         try {
           await downloadImage(
             `${tilesetBaseUrl}${z}_${x}_${y}.png`,
